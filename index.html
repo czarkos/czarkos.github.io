@@ -34,8 +34,8 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
 				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="#publications">Publications</a></li> 
+				  <li><a href="#projects">Projects</a></li>
+				  <!-- <li><a href="#publications">Publications</a></li>  -->
 				  <li><a href="Resume.pdf">CV</a></li> 
 		  </ul>
 		</div>
@@ -46,44 +46,55 @@
     <div class="container">
 
         <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
+            <!-- Name -->
+            <div class="col-md-12" style="margin-right: auto; font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Christos Zarkos</b></div><br>
+        </div> 
                 
-                <!-- Main Image -->
-                <img class="img-responsive" src="id_photo.jpg" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
-            </div> 
-
+        <div class="row">
             <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Christos Zarkos</b></div><br>
-                <p><b>czarkos@mit.edu</b><br>
-                <p>Electrical Engineering and Computer Science<br>
-                MIT<br>
-                32 Vassar St<br>
-                Cambridge, MA<br>
-                </p>
+            <div class="col-md-3">
+                <!-- Main Image -->
+                <img class="img-responsive" src="id_photo.jpg" alt="" style="width: 200px; margin-right: 20px; border-radius: 5px;"><br>
+                <!-- <p><b>czarkos@mit.edu</b><br> -->
+                <a href="mailto:czarkos@mit.edu">czarkos at mit dot edu</a><br
+                <dd><a href="https://www.linkedin.com/in/christos-zarkos/">LinkedIn</a></dd>
+                <dd><a href="https://github.com/czarkos">Github</a></dd>
             </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <!-- <dd><a href="#">Google Scholar</a></dd>  -->
-              <!-- <dd><a href="#">Twitter</a></dd> -->
-              <dd><a href="https://www.linkedin.com/in/christos-zarkos/">LinkedIn</a></dd>
+
+            <div class="col-md-9" style="margin-top:3%; text-align:justify; font-size: 20px;">                
+              <p>Hello!</p>
+              <p>I am currently in the second year of pursuing a PhD in Electrical Engineering and Computer Science at MIT, advised by professor Christina Delimitrou. My interests lie in Computer Architecture and Computer Systems, and I am currently exploring their application in the Cloud Computing domain.</p>
             </div>
+        </div> 
             
+        <div class="row">
+            <div class="col-md-3">    
+            </div>
+            <!-- Projects -->
+            <div class="col-md-9">    
+                <h2 id="projects">Projects</h2>
+                  <h3><a href="https://github.com/czarkos/ka-chow">Ka-chow</a></h3>
+                  <ul>
+                    <li>3-member group project</li>
+                    <li>Implemented a simulation of the performance of a photonics accelerator on CiMLoop</li>
+                  </ul>
+
+                  <h3><a href="https://github.com/czarkos/sparrow-sv">SPARROW-SV (Bachelor’s thesis)</a></h3>
+                  <ul>
+                    <li>Implemented a SIMD unit in SystemVerilog and integrated it into an industry-proven RISC-V processor (Veer EH1 RISC-V Core by Western Digital)</li>
+                    <li>Operated Logical Synthesis, area and timing analysis of the design with EDA tools (DesignCompiler)</li>
+                  </ul>
+
+                  <h3><a href="https://github.com/aangelakis/AlphaCompiler">AlphaCompiler</a></h3>
+                  <ul>
+                    <li>3-member group project</li>
+                    <li>Implemented a Compiler and a Virtual Machine for a JavaScript-like language (written in C)</li>
+                  </ul>
+            </div>
+        </div> 
             
             <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
+            <!-- <div class="col-md-8" style="height: 100vh;">    
                 <h2 id="publications">Publications</h2>
                 
                 <strong>Peer-reviewed</strong><br/>
@@ -95,9 +106,7 @@
                 <ul>
                 <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
                 </ul>
-            </div>
-
-            
+            </div> -->
         </div>
 
 
